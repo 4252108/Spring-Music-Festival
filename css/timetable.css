@@ -1,0 +1,92 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+h1 {
+    font-size: 32px;
+    text-align: center;
+    font-weight: bold;
+}
+
+.flex-col {
+    display: flex;
+    flex-direction: column;
+}
+
+.flex-row {
+    display: flex;
+    flex-direction: row;
+}
+
+
+/* トグルボタン */
+.toggle-btn-box {
+    justify-content: space-between;
+    width: 96%;
+    margin: 8px auto;
+}
+
+.toggle-btn {
+    width: 47%;
+    background-color: #D9D9D9;
+    justify-content: center;
+    align-items: center;
+    padding: 8px 0;
+}
+
+.date {
+    font-size: 32px;
+    font-weight: bold;
+    line-height: 32px;
+}
+
+.day {
+    font-size: 24px;
+    font-weight: bold;
+    line-height: 26px;
+}
+
+/* タイムテーブル */
+.timetable {
+    width: 96%;
+    margin: 8px auto;
+    font-size: 13px;
+    font-weight: bold;
+    line-height: 16px;
+    border-collapse: collapse;
+}
+
+.timetable thead {
+    line-height: 32px;
+    vertical-align: middle;
+}
+
+.timetable tbody td {
+    border-top: 1px solid #000;
+    height: 64px;
+}
+
+.time div {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.artist {
+    width: 38%;
+    /* display: flex; */
+    /* justify-content: center; */
+}
+
+.artist div {
+    width: 96%;
+    height: 56px;
+    display: flex;
+    background-color: #D9D9D9;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
