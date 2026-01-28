@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Spring Music Festival 2026 | お問い合わせ</title>
+    <link rel="stylesheet" href="css/contact.css">
+</head>
+<body>
+    <h1>お問い合わせ</h1>
+    <form id="contact">
+        <div class="form-item">
+            <label for="form-type">お問い合わせ種別<span class="required">必須</span></label>
+            <select name="type" id="form-type" required>
+                <option value="チケットについて" checked>チケットについて</option>
+                <option value="会場について">会場について</option>
+                <option value="主演者について">出演者について</option>
+                <option value="その他">その他</option>
+            </select>
+        </div>
+        <div class="form-item">
+            <label for="form-name">お名前<span class="required">必須</span></label>
+            <input type="text" name="name" id="form-name" placeholder="田中太郎">
+        </div>
+        <div class="form-item">
+            <label for="form-email">メールアドレス<span class="required">必須</span></label>
+            <input type="text" name="email" id="form-email" placeholder="abc@example.com">
+        </div>
+        <div class="form-item">
+            <label for="form-phone">電話番号<span class="required">必須</span></label>
+            <input type="text" name="phone" id="form-phone" placeholder="012-3456-7890">
+        </div>
+        <div class="form-item">
+            <label for="form-text">お問い合わせ内容<span class="required">必須</span></label>
+            <textarea name="text" id="form-text"></textarea>
+        </div>
+        <a href="privacy.html" class="privacy-link">プライバシーポリシー</a>
+        <div class="form-btns">
+            <button type="reset">リセット</button>
+            <button type="submit" id="submit">確認</button>
+        </div>
+    </form>
+</body>
+</html>
