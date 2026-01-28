@@ -119,6 +119,35 @@ p {
     align-items: center;
 }
 
+.thanks {
+    background: none;
+    border: none;
+    font-size: 14px;
+    text-align: center;
+    line-height: 28px;
+}
+
+.link-btn {
+    text-decoration: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #FF5F00;
+    border: 2px #fff solid;
+    width: 80%;
+    max-width: 320px;
+    padding: 16px 16px;
+    margin: 24px auto;
+    font-weight: bold;
+    border-radius: 8px;
+    font-size: 14px;
+    color: #fff;
+}
+
+.link-btn:hover {
+    background-color: #f3a87c;
+}
+
 @media screen and (min-width: 768px) {
     select, input, textarea, label, .privacy-link, p {
         font-size: 16px;
