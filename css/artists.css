@@ -126,10 +126,13 @@ a {
     color: #333;
 }
 
+
+
 .card-blog-content .card-excerpt {
     font-size: 0.95rem;
     color: #666;
     line-height: 1.4;
+    text-align: center;
 }
 
 /* --- 【重要】表示制限のロジック --- */
