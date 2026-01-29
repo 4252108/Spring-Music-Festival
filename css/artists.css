@@ -10,7 +10,7 @@ html {
 }
 
 body {
-    font-family: Arial, sans-serif;
+    font-family: 'Poppins', 'Noto Sans JP', sans-serif;
     background-color: #f9f9f9;
     margin: 0;
     padding-bottom: 60px;
@@ -18,13 +18,15 @@ body {
 }
 
 h2 {
-    border-bottom: solid #000000;
+    border-bottom: solid #00b0c7;
+    color: #00b0c7;
     text-align: center;
     margin-bottom: 40px;
 }
 
 .text-center {
     text-align: center;
+    color: #00b0c7;
 }
 
 .event-date {
@@ -32,7 +34,7 @@ h2 {
     /* 横並びにする */
     width: 100%;
     /* 幅を最大に */
-    background-color: #dddddd;
+    background-color: #ffe0c1;
     position: sticky;
     top: 0;
 }
@@ -41,10 +43,10 @@ h2 {
     flex: 1;
     text-align: center;
     text-decoration: none;
-    color: #000000;
+    color: #007B8C;
     padding: 15px 0;
     font-size: 18px;
-    font-weight: normal;
+    font-weight: bold;
     display: block;
     box-sizing: border-box;
 }
@@ -54,7 +56,7 @@ h2 {
 }
 
 .event-date a:hover {
-    background-color: #cccccc;
+    background-color: #ffc993;
     opacity: 0.8;
 }
 
@@ -150,7 +152,7 @@ a {
         grid-template-columns: repeat(2, 1fr);
     }
 
-    .card-blog-a{
+    .card-blog-a {
         height: 250px;
     }
 
