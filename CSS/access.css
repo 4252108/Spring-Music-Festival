@@ -1,0 +1,52 @@
+@charset "utf-8";
+
+body {
+    margin: 0;
+    font-family: "Noto Sans JP", sans-serif;
+    font-family: "Poppins", sans-serif;
+}
+
+.taitol,
+.midasi,
+p,
+div {
+    text-align: center;
+}
+
+.midasi {
+    margin-left: 0;
+}
+
+img,
+iframe {
+    max-width: 100%;
+    height: auto;
+    box-sizing: border-box;
+    padding: 0 30px;
+}
+
+@media (min-width: 768px) {
+    .midasi {
+        font-size: 1.2rem;
+    }
+
+    iframe,img {
+        width: 600px;
+        height: 450px;
+    }
+}
+
+@media (min-width: 1280px) {
+    .midasi {
+        font-size: 1.4rem;
+    }
+
+    iframe,img {
+        width: 800px;
+        height: 500px;
+    }
+
+    hr {
+        width: 35%;
+    }
+}
