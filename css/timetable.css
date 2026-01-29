@@ -144,7 +144,7 @@ body {
         height: 96px;
     }
 
-    .artist div {
+    .artist a {
         height: 72px;
     }
 }
