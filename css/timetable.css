@@ -106,7 +106,7 @@ body {
     width: 38%;
 }
 
-.artist div {
+.artist a {
     width: 96%;
     height: 56px;
     display: flex;
@@ -118,6 +118,13 @@ body {
     text-align: center;
     color: #1e707b;
     cursor: pointer;
+    text-decoration: none;
+}
+
+.artist a:hover {
+    color: #FF5F00;
+    background-color: #F3DFB4;
+
 }
 
 @media screen and (min-width: 768px) {
