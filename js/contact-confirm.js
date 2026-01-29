@@ -11,4 +11,5 @@ Object.keys(jsonObject).forEach(key => {
 submitBtn.addEventListener('click', () => {
     // ローカルストレージからデータを削除
     localStorage.removeItem('smf-contact')
+    window.location.href = '/contact-thanks.html'
 })
