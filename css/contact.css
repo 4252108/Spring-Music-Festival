@@ -148,6 +148,12 @@ p {
     background-color: #f3a87c;
 }
 
+.error {
+    color: #FD5D5D;
+    font-size: 12px;
+    margin-left: 8px;
+}
+
 @media screen and (min-width: 768px) {
     select, input, textarea, label, .privacy-link, p {
         font-size: 16px;
