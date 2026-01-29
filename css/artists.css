@@ -1,0 +1,196 @@
+@charset "utf-8";
+
+html {
+    scroll-behavior: smooth;
+}
+
+#SAT-artists,
+#SUN-artists {
+    scroll-margin-top: 75px;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f9f9f9;
+    margin: 0;
+    padding-bottom: 60px;
+    /* 下部に余白を追加 */
+}
+
+h2 {
+    border-bottom: solid #000000;
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.text-center {
+    text-align: center;
+}
+
+.event-date {
+    display: flex;
+    /* 横並びにする */
+    width: 100%;
+    /* 幅を最大に */
+    background-color: #dddddd;
+    position: sticky;
+    top: 0;
+}
+
+.event-date a {
+    flex: 1;
+    text-align: center;
+    text-decoration: none;
+    color: #000000;
+    padding: 15px 0;
+    font-size: 18px;
+    font-weight: normal;
+    display: block;
+    box-sizing: border-box;
+}
+
+.event-date a:not(:last-child) {
+    border-right: 1px solid #000000;
+}
+
+.event-date a:hover {
+    background-color: #cccccc;
+    opacity: 0.8;
+}
+
+a {
+    text-decoration: none;
+}
+
+/* グループ全体を囲むセクション（任意） */
+.group-section {
+    max-width: 1000px;
+    margin: 40px auto 60px auto;
+    /* 上40px、下60pxの間隔を空ける */
+    padding: 0 20px;
+}
+
+.group-section h3 {
+    text-align: center;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+/* カードのグリッドコンテナ */
+.card-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    /* 横3列 */
+    gap: 24px;
+    /* max-widthやmarginは親の.group-sectionで制御するので削除してもOKですが、念のため残しても問題ありません */
+}
+
+/* --- カード自体のスタイル（変更なし） --- */
+.card-blog-a {
+    width: auto;
+    /* Gridに合わせて伸縮 */
+    border: 1px solid #ddd;
+    border-radius: 6px;
+    overflow: hidden;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    background: #fff;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    cursor: pointer;
+}
+
+.card-blog-a:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 6px 16px rgba(0, 0, 0, 0.2);
+}
+
+.card-blog-a img {
+    width: 100%;
+    height: 200px;
+    /* 高さを揃える */
+    object-fit: cover;
+    display: block;
+    transition: transform 0.4s ease;
+}
+
+.card-blog-a:hover img {
+    transform: scale(1.05);
+}
+
+.card-blog-content {
+    padding: 14px;
+}
+
+.card-blog-content .card-title {
+    font-size: 1.2rem;
+    margin: 0 0 6px 0;
+    color: #333;
+}
+
+
+
+.card-blog-content .card-excerpt {
+    font-size: 0.95rem;
+    color: #666;
+    line-height: 1.4;
+    text-align: center;
+}
+
+/* --- 【重要】表示制限のロジック --- */
+/* .card-container の中にある .card-blog-a に対して適用されます。
+   親要素（card-container）が2つあるので、それぞれの中でカウントされます。
+   つまり、グループAで6個表示、グループBで6個表示となります。
+*/
+.card-container .card-blog-a:nth-child(n+7) {
+    display: none;
+}
+
+/* スマホ対応（任意） */
+@media (max-width: 768px) {
+    .card-container {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .card-blog-a{
+        height: 250px;
+    }
+
+    .card-blog-a img {
+        height: 110px;
+        aspect-ratio: 16 / 9;
+    }
+}
+
+
+/* ここからアーティスト詳細ページ用のCSS */
+.artist-img img {
+    width: 100%;
+    display: block;
+    margin: auto;
+    margin-bottom: 30px;
+}
+
+.artist {
+    padding: 5%;
+}
+
+.btn-back {
+    display: inline-block;
+    background-color: #ff5a00;
+    color: #ffffff;
+    text-decoration: none;
+    padding: 12px 40px;
+    border-radius: 5px;
+    font-weight: bold;
+    font-size: 16px;
+    font-family: sans-serif;
+    transition: opacity 0.3s;
+}
+
+.btn-back:hover {
+    opacity: 0.8;
+}
+
+.button-container {
+    text-align: center;
+    margin-top: 30px;
+}
