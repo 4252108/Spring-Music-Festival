@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>グッズ紹介ページ</title>
+    <link rel="stylesheet" href="css/goods.css">
+    <!-- Noto Sans JP(日本語) -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@100..900&display=swap" rel="stylesheet">
+    <!-- Poppins(英語) -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <header class="site-header">
+        <a href="index.html" class="site-title">Spring Music Festival 2026</a>
+
+        <button class="menu-button" aria-label="メニュー">
+            <span></span>
+            <span></span>
+            <span></span>
+        </button>
+    </header>
+    <!-- ハンバーガーメニュー展開部分 -->
+    <nav class="hamburger-menu" id="hamburgerMenu">
+        <button class="close-button" aria-label="閉じる">✕</button>
+        <ul>
+            <li><a href="timetable.html">タイムテーブル</a></li>
+            <li><a href="artists/index.html">出演者一覧</a></li>
+            <li><a href="access.html">会場案内</a></li>
+            <li><a href="ticket.html">チケット情報</a></li>
+            <li><a href="#">グッズ</a></li>
+            <li><a href="guide.html">来場者ガイド</a></li>
+            <li><a href="faq.html">よくある質問</a></li>
+            <li><a href="contact.html">お問い合わせ</a></li>
+            <li><a href="privacy.html">プライバシーポリシー</a></li>
+        </ul>
+    </nav>
+
+
+    <h1>グッズ紹介</h1>
+    <h2>当日会場で販売!!</h2>
+    <div class="goods-list">
+        <div class="goods-item">
+            <img src="img/goods/bag.webp" alt="imbag">
+            <div class="goods-text">
+                <p class="name">Spring Music Festivalトートバッグ(エコバッグ)</p>
+                <p class="price">¥2,500</p>
+                <p class="desc">
+                    本体：縦38cm × 横36cm × マチ14cm <br>
+                    持ち手：約60cm <br>
+                    持ち手幅：約2.5cm <br>
+                    素材：コットン <br>
+                    カラー：ナチュラル <br>
+                </p>
+            </div>
+        </div>
+        <div class="goods-item">
+            <img src="img/goods/brochure.webp" alt="imbrochure">
+            <div class="goods-text">
+                <p class="name">Spring Music Festivalパンフレット</p>
+                <p class="price">¥1,000</p>
+                <p class="desc">
+                    出演アーティスト情報<br>
+                    出演者インタビュー掲載<br>
+                    イベント概要<br>
+                </p>
+            </div>
+        </div>
+        <div class="goods-item">
+            <img src="img/goods/sticker.webp" alt="imsticker">
+            <div class="goods-text">
+                <p class="name">Spring Music Festivalステッカー</p>
+                <p class="price">¥500</p>
+                <p class="desc">5枚セット
+                    複数柄セット（ロゴ／楽器／ライブモチーフ など）<br>
+                    フルカラー<br>
+                    ダイカットステッカー<br>
+                </p>
+            </div>
+        </div>
+        <div class="goods-item">
+            <img src="img/goods/t-shirt.webp" alt="imt-shirt">
+            <div class="goods-text">
+                <p class="name">Spring Music FestivalTシャツ</p>
+                <p class="price">¥3,500</p>
+                <p class="desc">
+                    (S/M/L/XL) <br>
+                    カラー：ホワイト/ブラック<br>
+                </p>
+            </div>
+        </div>
+        <div class="goods-item">
+            <img src="img/goods/towel.webp" alt="imtowel">
+            <div class="goods-text">
+                <p class="name">Spring Music Festivalタオル</p>
+                <p class="price">¥2,000</p>
+                <p class="desc">フェスロゴ入り</p>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            const menuButton = document.querySelector('.menu-button');
+            const menu = document.getElementById('hamburgerMenu');
+
+            menuButton.addEventListener('click', () => {
+                menu.classList.toggle('active');
+                menuButton.classList.toggle('active');
+            });
+        });
+    </script>
+
+</body>
+
+</html>
