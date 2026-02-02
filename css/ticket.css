@@ -2,7 +2,7 @@
 
 body {
   margin: 0;
-  font-family: system-ui, sans-serif;
+  font-family: "Noto Sans JP", sans-serif;
   line-height: 1.7;
 }
 
@@ -101,6 +101,7 @@ body {
   text-align: center;
   margin-top: 1rem;
   font-size: 0.9rem;
+  font-family: "Poppins", sans-serif;
 }
 
 

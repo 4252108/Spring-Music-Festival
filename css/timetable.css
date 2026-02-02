@@ -1,0 +1,150 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+h1 {
+    font-size: 32px;
+    text-align: center;
+    font-weight: bold;
+}
+
+body {
+    font-family: "Noto Sans JP", sans-serif;
+    font-optical-sizing: auto;
+}
+
+.ff-en {
+    font-family: "Poppins", sans-serif;
+}
+
+.flex-col {
+    display: flex;
+    flex-direction: column;
+}
+
+.flex-row {
+    display: flex;
+    flex-direction: row;
+}
+
+
+/* トグルボタン */
+.toggle-btn-box {
+    justify-content: center;
+    gap: 16px;
+    width: 96%;
+    margin: 8px auto;
+}
+
+.toggle-btn {
+    width: 47%;
+    max-width: 150px;
+    aspect-ratio: 1 / 1;
+    color: #FF5F00;
+    background-color: #F3DFB4;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+.day-count {
+    font-weight: bold;
+}
+
+.date {
+    font-size: 32px;
+    font-weight: bold;
+    line-height: 38px;
+}
+
+.day {
+    font-size: 24px;
+    font-weight: bold;
+    line-height: 26px;
+}
+
+.toggle-btn.active {
+    background-color: #FF5F00;
+    color: #fff;
+}
+
+/* タイムテーブル */
+#toggle-table-2 {
+    display: none;
+}
+
+.timetable {
+    width: 96%;
+    max-width: 960px;
+    margin: 8px auto;
+    font-size: 12px;
+    font-weight: bold;
+    line-height: 16px;
+    border-collapse: collapse;
+}
+
+.timetable thead {
+    line-height: 32px;
+    vertical-align: middle;
+}
+
+.timetable tbody td {
+    border-top: 1px solid #000;
+    height: 72px;
+}
+
+.time div {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.artist {
+    width: 38%;
+}
+
+.artist a {
+    width: 96%;
+    height: 56px;
+    display: flex;
+    background-color: rgba(168, 209, 235, 0.7);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: #1e707b;
+    cursor: pointer;
+    text-decoration: none;
+}
+
+.artist a:hover {
+    color: #FF5F00;
+    background-color: #F3DFB4;
+
+}
+
+@media screen and (min-width: 768px) {
+    .time div {
+        flex-direction: row;
+        gap: 8px;
+    }
+}
+
+@media screen and (min-width: 960px) {
+    .timetable {
+        font-size: 16px;
+        line-height: 18px;
+    }
+
+    .timetable tbody td {
+        height: 96px;
+    }
+
+    .artist a {
+        height: 72px;
+    }
+}
