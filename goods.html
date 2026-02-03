@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>グッズ紹介ページ</title>
     <link rel="stylesheet" href="css/goods.css">
+    <link rel="stylesheet" href="css/all-style.css">
     <!-- Noto Sans JP(日本語) -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -13,7 +14,9 @@
     <!-- Poppins(英語) -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
 </head>
 
 <body>
@@ -104,18 +107,39 @@
             </div>
         </div>
     </div>
+    <footer class="site-footer">
+        <div class="footer-inner">
 
-    <script>
-        document.addEventListener('DOMContentLoaded', () => {
-            const menuButton = document.querySelector('.menu-button');
-            const menu = document.getElementById('hamburgerMenu');
+            <div class="footer-col">
+                <a href="index.html">ホーム</a>
+                <a href="goods.html">グッズ</a>
+                <a href="timetable.html">タイムテーブル</a>
+            </div>
 
-            menuButton.addEventListener('click', () => {
-                menu.classList.toggle('active');
-                menuButton.classList.toggle('active');
-            });
-        });
-    </script>
+            <div class="footer-col">
+                <a href="guide.html">来場者ガイド</a>
+                <a href="artists.html">出演者一覧</a>
+                <a href="faq.html">よくある質問</a>
+            </div>
+
+            <div class="footer-col">
+                <a href="access.html">会場案内</a>
+                <a href="contact.html">お問い合わせ</a>
+                <a href="ticket.html">チケット情報</a>
+            </div>
+
+            <div class="footer-col">
+                <a href="privacy.html">プライバシーポリシー</a>
+            </div>
+
+        </div>
+
+        <p class="copyright text-center">Copyright©2026 Morijyobi</p>
+    </footer>
+    <script src="js/index.js"></script>
+
+
+
 
 </body>
 
