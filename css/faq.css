@@ -6,7 +6,7 @@
     top: 0;
     left: 0;
     width: 100%;
-    height: 65px;
+    height: 64px;
     background-color: #00B0C7;
     z-index: 1000;
     /* ← 重要 */
@@ -65,7 +65,7 @@
 ========================= */
 .hamburger-menu {
     position: fixed;
-    top: 65px;
+    top: 64px;
     /* header の高さ */
     left: 0;
     width: 100%;
@@ -105,16 +105,16 @@
     right: 16px;
     background: none;
     border: none;
-    font-size: 28px;
+    font-size: 32px;
     cursor: pointer;
     color: #333;
 }
 
 
-body {
+.fap {
     margin: 0;
-    padding: 65px 16px 0;
-    padding-top: 65px;
+    padding: 64px 16px 0;
+    padding-top: 64px;
     /* fixed header 分 */
     font-family: "Noto Sans JP", sans-serif;
     font-family: "Poppins", sans-serif;
