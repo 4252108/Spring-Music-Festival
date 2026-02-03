@@ -173,6 +173,7 @@ a {
 
 .artist {
     padding: 5%;
+    margin-top: 25px;
 }
 
 .btn-back {
@@ -195,4 +196,11 @@ a {
 .button-container {
     text-align: center;
     margin-top: 30px;
+    margin-bottom: 30px;
+}
+
+@media (max-width: 768px) {
+    .artist{
+        margin-top: 50px;
+    }
 }
