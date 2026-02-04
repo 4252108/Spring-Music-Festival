@@ -25,7 +25,8 @@ body {
 }
 
 .table-wrapper {
-  overflow-x: auto; /* table-responsive 相当 */
+  overflow-x: auto;
+  /* table-responsive 相当 */
 }
 
 .ticket-table {
@@ -73,7 +74,8 @@ body {
 }
 
 .footer-col {
-  width: 50%;                 /* 375px以上 → 2列 */
+  width: 50%;
+  /* 375px以上 → 2列 */
   text-align: center;
   margin-bottom: 1rem;
 }
@@ -104,6 +106,15 @@ body {
   font-family: "Poppins", sans-serif;
 }
 
-.page-title{
+.page-title {
   margin-top: 80px;
+}
+
+.body {
+  font-family: "Noto Sans JP", sans-serif;
+  font-family: "Poppins", sans-serif;
+}
+
+.site-title {
+  font-family: "Poppins", sans-serif;
 }
