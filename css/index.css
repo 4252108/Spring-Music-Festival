@@ -38,6 +38,9 @@ body {
   min-width: 145px;
   margin-bottom: 10px;
   margin: 0 auto 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .nitei {
@@ -50,6 +53,7 @@ body {
 
 .nitei h2 {
   margin-top: 10px;
+  text-align: center;
 }
 
 .nitei table {
@@ -60,6 +64,11 @@ body {
 
 .nitei td {
   padding: 4px 12px 4px 0;
+}
+
+.nitei {
+  text-align: center;
+  margin: auto;
 }
 
 
@@ -195,7 +204,7 @@ body {
 
   .nitei {
     display: grid;
-    text-align: left;
+    /* text-align: left; */
     gap: 40px;
   }
 
